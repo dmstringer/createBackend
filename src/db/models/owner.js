@@ -10,7 +10,9 @@ module.exports = (sequelize, DataTypes) => {
       createdAt: DataTypes.DATE,
       updatedAt: DataTypes.DATE,
     },
-    {}
+    {
+      timestamps: true
+    }
   );
   Owner.associate = function (models) {
     // associations can be defined here
