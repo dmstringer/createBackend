@@ -5,10 +5,12 @@ module.exports = (sequelize, DataTypes) => {
     {
       id: DataTypes.FLOAT,
       name: DataTypes.STRING,
-      createdAT: DataTypes.DATE,
+      createdAt: DataTypes.DATE,
       updatedAt: DataTypes.DATE,
     },
-    {}
+    {
+      timestamps: true
+    }
   );
   Store.associate = function (models) {
     // associations can be defined here
