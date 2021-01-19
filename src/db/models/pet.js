@@ -15,7 +15,9 @@ module.exports = (sequelize, DataTypes) => {
       createdAt: DataTypes.DATE,
       updatedAt: DataTypes.DATE,
     },
-    {}
+    {
+      timestamps: true
+    }
   );
   Pet.associate = function (models) {
     // associations can be defined here
